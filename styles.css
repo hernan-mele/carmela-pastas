@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Bai Jamjuree', sans-serif;
 }
 
 body{
@@ -15,6 +18,10 @@ body{
     height: fit-content;
     background-color: rgb(210, 200, 190);
     padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 .header__img{
@@ -33,7 +40,7 @@ body{
     align-items: center;
     position: relative;
     top: 50%;
-    left: 60%;
+    left: 50%;
     list-style: none;
     font-size: 1.2em;
 }
@@ -50,4 +57,51 @@ body{
 .nav-list__li-a:hover{
     text-decoration: underline;
     color: #888;
+}
+
+.nuestras-pastas{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nuestras-pastas__1{
+    border-right: 1px solid #000;
+    height: 50vh;
+    width: 50%;
+    text-align: center;
+    background: url("./img/nuestas-pastas-bg.jpeg") center / cover no-repeat;
+}
+
+.nuestras-pastas-1__title{
+    position: relative;
+    top: 38%;
+    left: 32%;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.glass{
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(12px);
+}
+
+.nuestras-pastas__2{
+    height: 50vh;
+    width: 50%;
+    text-align: center;
+    background-color: rgb(210, 200, 190);
+}
+
+.nuestras-pastas__2-list{
+    list-style: none;
+    font-size: 1.5em;
+    position: relative;
+    top: 20%;
 }
