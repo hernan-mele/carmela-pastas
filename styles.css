@@ -22,6 +22,7 @@ body{
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 10;
 }
 
 .header__img{
@@ -64,17 +65,17 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
+    height: 100vh;
 }
 
 .nuestras-pastas__1{
-    border-right: 1px solid #000;
     height: 50vh;
     width: 50%;
     text-align: center;
     background: url("./img/nuestas-pastas-bg.jpeg") center / cover no-repeat;
 }
 
-.nuestras-pastas-1__title{
+.nuestras-pastas-1__title, .nuestros-sabores-2__title{
     position: relative;
     top: 38%;
     left: 32%;
@@ -92,16 +93,49 @@ body{
     backdrop-filter: blur(12px);
 }
 
-.nuestras-pastas__2{
+.nuestras-pastas__2, .nuestros-sabores__1{
     height: 50vh;
     width: 50%;
     text-align: center;
     background-color: rgb(210, 200, 190);
 }
 
-.nuestras-pastas__2-list{
+.nuestros-sabores__1{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.nuestras-pastas__2-list, .nuestros-sabores__1-list, .nuestros-sabores__1-list-2{
     list-style: none;
     font-size: 1.5em;
     position: relative;
     top: 20%;
+}
+
+.nuestros-sabores__1-list{
+    text-align: center;
+    margin-left: 15px;
+    top: 5%;
+}
+
+.nuestros-sabores__1-list-2{
+    text-align: center;
+    top: 5%;
+    left: 20%;
+}
+
+.nuestros-sabores{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+}
+
+.nuestros-sabores__2{
+    height: 50vh;
+    width: 50%;
+    text-align: center;
+    background: url("./img/nuestros-sabores-bg.jpeg") center / cover no-repeat;
 }
