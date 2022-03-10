@@ -17,8 +17,8 @@
                 <ul class="header__nav-list">
                     <li class="nav-list__li"><a href="#pastas" class="nav-list__li-a">Pastas</a></li>
                     <li class="nav-list__li"><a href="#sabores" class="nav-list__li-a">Sabores</a></li>
-                    <li class="nav-list__li"><a href="#" class="nav-list__li-a">Salsas</a></li>
-                    <li class="nav-list__li"><a href="#" class="nav-list__li-a">Combos</a></li>
+                    <li class="nav-list__li"><a href="#salsas" class="nav-list__li-a">Salsas</a></li>
+                    <li class="nav-list__li"><a href="#combos" class="nav-list__li-a">Combos</a></li>
                     <li class="nav-list__li"><a href="#" class="nav-list__li-a">Pedidos</a></li>
                     <li class="nav-list__li"><a href="#" class="nav-list__li-a">Formas de Pago</a></li>
                 </ul>
@@ -62,6 +62,64 @@
             </div>
             <div class="nuestros-sabores__2">
                 <h2 class="nuestros-sabores-2__title glass">Nuestros Sabores</h2>
+            </div>
+        </section>
+        <section class="nuestras-salsas" id="salsas">
+            <div class="nuestras-salsas__1">
+                <h2 class="nuestras-salsas-1__title glass">Nuestras Salsas</h2>
+            </div>
+            <div class="nuestras-salsas__2">
+                <ul class="nuestras-salsas__2-list">
+                    <li>Rosa</li>
+                    <li>Tuco</li>
+                    <li>Fileto</li>
+                    <li>Blanca</li>
+                    <li>Bolognesa</li>
+                </ul>
+            </div>
+        </section>
+        <section class="nuestros-combos" id="combos">
+            <div class="nuestros-combos__1">
+                <div class="flex-row">
+                    <label for="pastas">Pastas:</label>
+                    <select name="pastas" id="pasta-combo" class="combo">
+                        <option value="default">Seleccione la Pasta</option>
+                        <option value="0">Ñoquis</option>
+                        <option value="1">Tallarines</option>
+                        <option value="2">Raviolones</option>
+                        <option value="3">Sorrentinos</option>
+                        <option value="4">Capelletis</option>
+                    </select>
+                    <label for="tipo">Integral</label>
+                    <input type="checkbox" id="tipo">
+                </div>
+                <div class="flex-row">
+                    <label for="rellenas" id="sabores">Sabores Rellenos:</label>
+                    <select name="rellenas" id="rellenas">
+                        <option value="default">Seleccione el Sabor</option>
+                        <option value="1">Capresse</option>
+                        <option value="2">Ricotta y Nuez</option>
+                        <option value="3">Jamon y Queso</option>
+                        <option value="4">Pollo y Puerro</option>
+                        <option value="5">Zanahoria y Nuez</option>
+                        <option value="6">Jamon y Roquefort</option>
+                        <option value="7">Jamon crudo y Rucula</option>
+                        <option value="8">Verduras Caramelizadas</option>
+                    </select>
+                </div>
+                <div class="flex-row">
+                    <label for="simples" id="simples">Sabores Simples:</label>
+                    <select name="simples" id="simples-list">
+                        <option value="0">Seleccione el Sabor</option>
+                        <option value="1">Papa</option>
+                        <option value="2">Remolacha</option>
+                        <option value="3">Espinaca</option>
+                        <option value="4">Calabaza</option>
+                    </select>
+                </div>
+            </div>
+            <div class="nuestros-combos__2">
+                <h2 class="nuestros-combos-2__title glass">Elegi tu Combo</h2>
             </div>
         </section>
     </div>

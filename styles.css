@@ -7,6 +7,10 @@
     font-family: 'Bai Jamjuree', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: rgb(232, 228, 217);
 }
@@ -75,7 +79,7 @@ body{
     background: url("./img/nuestas-pastas-bg.jpeg") center / cover no-repeat;
 }
 
-.nuestras-pastas-1__title, .nuestros-sabores-2__title{
+.nuestras-pastas-1__title, .nuestros-sabores-2__title, .nuestras-salsas-1__title, .nuestros-combos-2__title{
     position: relative;
     top: 38%;
     left: 32%;
@@ -93,7 +97,7 @@ body{
     backdrop-filter: blur(12px);
 }
 
-.nuestras-pastas__2, .nuestros-sabores__1{
+.nuestras-pastas__2, .nuestros-sabores__1, .nuestras-salsas__2{
     height: 50vh;
     width: 50%;
     text-align: center;
@@ -106,14 +110,14 @@ body{
     align-items: flex-start;
 }
 
-.nuestras-pastas__2-list, .nuestros-sabores__1-list, .nuestros-sabores__1-list-2{
+.nuestras-pastas__2-list, .nuestros-sabores__1-list, .nuestros-sabores__1-list-2, .nuestras-salsas__2-list{
     list-style: none;
     font-size: 1.5em;
     position: relative;
     top: 20%;
 }
 
-.nuestros-sabores__1-list{
+.nuestros-sabores__1-list, .nuestras-salsas__2-list{
     text-align: center;
     margin-left: 15px;
     top: 5%;
@@ -125,7 +129,7 @@ body{
     left: 20%;
 }
 
-.nuestros-sabores{
+.nuestros-sabores, .nuestras-salsas, .nuestros-combos{
     margin-top: 50px;
     display: flex;
     flex-direction: row;
@@ -138,4 +142,42 @@ body{
     width: 50%;
     text-align: center;
     background: url("./img/nuestros-sabores-bg.jpeg") center / cover no-repeat;
+}
+
+.nuestras-salsas__1{
+    height: 50vh;
+    width: 50%;
+    text-align: center;
+    background: url("./img/nuestras-salsas-bg.jpeg") top / cover no-repeat;
+}
+
+.nuestras-salsas__2-list{
+    top: 25%;
+}
+
+.nuestros-combos__1{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: left;
+    background-color: rgb(210, 200, 190);
+}
+
+.nuestros-combos__1 select{
+    width: 50%;
+    margin: 20px;
+}
+
+.flex-row{
+    flex-direction: row;
+}
+
+.nuestros-combos__2{
+    height: 50vh;
+    width: 50%;
+    text-align: center;
+    background: url("./img/WhatsApp\ Image\ 2022-03-08\ at\ 22.45.47\(1\).jpeg") center / cover no-repeat;
 }
