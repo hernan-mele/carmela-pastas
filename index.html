@@ -19,7 +19,7 @@
                     <li class="nav-list__li"><a href="#sabores" class="nav-list__li-a">Sabores</a></li>
                     <li class="nav-list__li"><a href="#salsas" class="nav-list__li-a">Salsas</a></li>
                     <li class="nav-list__li"><a href="#combos" class="nav-list__li-a">Combos</a></li>
-                    <li class="nav-list__li"><a href="#" class="nav-list__li-a">Pedidos</a></li>
+                    <li class="nav-list__li"><a href="#pedidos" class="nav-list__li-a">Pedidos</a></li>
                     <li class="nav-list__li"><a href="#" class="nav-list__li-a">Formas de Pago</a></li>
                 </ul>
             </nav>
@@ -83,43 +83,51 @@
                 <div class="flex-row">
                     <label for="pastas">Pastas:</label>
                     <select name="pastas" id="pasta-combo" class="combo">
-                        <option value="">Seleccione la Pasta</option>
-                        <option value="0">Ñoquis</option>
-                        <option value="1">Tallarines</option>
-                        <option value="2">Raviolones</option>
-                        <option value="3">Sorrentinos</option>
-                        <option value="4">Capelletis</option>
+                        <option value="default">Seleccione la Pasta</option>
+                        <option value="ñoquis">Ñoquis</option>
+                        <option value="tallarines">Tallarines</option>
+                        <option value="raviolones">Raviolones</option>
+                        <option value="sorrentinos">Sorrentinos</option>
+                        <option value="cappellettis">Cappellettis</option>
                     </select>
                     <label for="tipo">Integral</label>
                     <input type="checkbox" id="tipo">
                 </div>
-                <div class="flex-row" id="rellenos-list-hidden">
+                <div class="flex-row">
                     <label for="rellenas" id="sabores">Sabores Rellenos:</label>
                     <select name="rellenas" id="rellenas">
                         <option value="default">Seleccione el Sabor</option>
-                        <option value="1">Capresse</option>
-                        <option value="2">Ricotta y Nuez</option>
-                        <option value="3">Jamon y Queso</option>
-                        <option value="4">Pollo y Puerro</option>
-                        <option value="5">Zanahoria y Nuez</option>
-                        <option value="6">Jamon y Roquefort</option>
-                        <option value="7">Jamon crudo y Rucula</option>
-                        <option value="8">Verduras Caramelizadas</option>
+                        <option value="capresse">Capresse</option>
+                        <option value="ricotta y nuez">Ricotta y Nuez</option>
+                        <option value="jamon y queso">Jamon y Queso</option>
+                        <option value="pollo y puerro">Pollo y Puerro</option>
+                        <option value="zanahoria y nuez">Zanahoria y Nuez</option>
+                        <option value="jamon y roquefort">Jamon y Roquefort</option>
+                        <option value="jamon crudo y rucula">Jamon crudo y Rucula</option>
+                        <option value="verduras caramelizadas">Verduras Caramelizadas</option>
                     </select>
                 </div>
-                <div class="flex-row" id="simples-list-hidden">
+                <div class="flex-row">
                     <label for="simples" id="simples">Sabores Simples:</label>
                     <select name="simples" id="simples-list">
-                        <option value="0">Seleccione el Sabor</option>
-                        <option value="1">Papa</option>
-                        <option value="2">Remolacha</option>
-                        <option value="3">Espinaca</option>
-                        <option value="4">Calabaza</option>
+                        <option value="default">Seleccione el Sabor</option>
+                        <option value="papa">Papa</option>
+                        <option value="remolacha">Remolacha</option>
+                        <option value="espinaca">Espinaca</option>
+                        <option value="calabaza">Calabaza</option>
                     </select>
                 </div>
             </div>
             <div class="nuestros-combos__2">
                 <h2 class="nuestros-combos-2__title glass">Elegi tu Combo</h2>
+            </div>
+        </section>
+        <section class="pedidos" id="pedidos">
+            <div class="pedidos__1">
+                <h2 class="pedidos-1__title glass">Hacenos tu Pedido</h2>
+            </div>
+            <div class="pedidos__2">
+                <p class="pedidos-2__p">Podes hacernos tu pedido al <a id="whatsapp">11-6368-0269</a> los dias viernes y sabado y lo podes retirar el dia domingo</p>
             </div>
         </section>
     </div>
