@@ -181,3 +181,11 @@ body{
     text-align: center;
     background: url("./img/WhatsApp\ Image\ 2022-03-08\ at\ 22.45.47\(1\).jpeg") center / cover no-repeat;
 }
+
+#rellenos-list-hidden, #simples-list-hidden{
+    display: none;
+}
+
+.non-hidden{
+    display: block;
+}

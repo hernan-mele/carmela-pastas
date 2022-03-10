@@ -83,7 +83,7 @@
                 <div class="flex-row">
                     <label for="pastas">Pastas:</label>
                     <select name="pastas" id="pasta-combo" class="combo">
-                        <option value="default">Seleccione la Pasta</option>
+                        <option value="">Seleccione la Pasta</option>
                         <option value="0">Ñoquis</option>
                         <option value="1">Tallarines</option>
                         <option value="2">Raviolones</option>
@@ -93,7 +93,7 @@
                     <label for="tipo">Integral</label>
                     <input type="checkbox" id="tipo">
                 </div>
-                <div class="flex-row">
+                <div class="flex-row" id="rellenos-list-hidden">
                     <label for="rellenas" id="sabores">Sabores Rellenos:</label>
                     <select name="rellenas" id="rellenas">
                         <option value="default">Seleccione el Sabor</option>
@@ -107,7 +107,7 @@
                         <option value="8">Verduras Caramelizadas</option>
                     </select>
                 </div>
-                <div class="flex-row">
+                <div class="flex-row" id="simples-list-hidden">
                     <label for="simples" id="simples">Sabores Simples:</label>
                     <select name="simples" id="simples-list">
                         <option value="0">Seleccione el Sabor</option>
@@ -123,5 +123,6 @@
             </div>
         </section>
     </div>
+    <script src="./main.js"></script>
 </body>
 </html>
