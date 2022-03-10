@@ -1,9 +1,8 @@
 const pastasList = document.querySelector('#pasta-combo')
-const rellenos = document.querySelector('#rellenos-list-hidden')
 const rellenosList = document.querySelector('#rellenas')
-const simples = document.querySelector('#simples-list-hidden')
 const simplesList = document.querySelector('#simples-list')
 const whatsappLink = document.querySelector('#whatsapp')
+const integral = document.querySelector('#tipo')
 
 let pastasObject = {
     'ñoquis': 'ñoquis',
