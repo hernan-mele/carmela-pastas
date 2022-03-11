@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/logo.jpeg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles.css">
     <title>La Morena Pastas</title>
 </head>
@@ -20,7 +21,7 @@
                     <li class="nav-list__li"><a href="#salsas" class="nav-list__li-a">Salsas</a></li>
                     <li class="nav-list__li"><a href="#combos" class="nav-list__li-a">Combos</a></li>
                     <li class="nav-list__li"><a href="#pedidos" class="nav-list__li-a">Pedidos</a></li>
-                    <li class="nav-list__li"><a href="#" class="nav-list__li-a">Formas de Pago</a></li>
+                    <li class="nav-list__li"><a href="#forma-de-pago" class="nav-list__li-a">Formas de Pago</a></li>
                 </ul>
             </nav>
         </header>
@@ -83,7 +84,7 @@
                 <div class="flex-row">
                     <label for="pastas">Pastas:</label>
                     <select name="pastas" id="pasta-combo" class="combo">
-                        <option value="default">Seleccione la Pasta</option>
+                        <option value="default">Seleccione una opcion</option>
                         <option value="ñoquis">Ñoquis</option>
                         <option value="tallarines">Tallarines</option>
                         <option value="raviolones">Raviolones</option>
@@ -92,7 +93,7 @@
                     </select>
                 </div>
                 <div class="flex-row">
-                    <label for="rellenas" id="sabores">Sabores Rellenos:</label>
+                    <label for="rellenas" id="sabores">Sabores Rellenos (Raviolones/Sorrentinos/Cappellettis)</label>
                     <select name="rellenas" id="rellenas">
                         <option value="default">Seleccione el Sabor</option>
                         <option value="capresse">Capresse</option>
@@ -106,13 +107,24 @@
                     </select>
                 </div>
                 <div class="flex-row">
-                    <label for="simples" id="simples">Sabores Simples:</label>
+                    <label for="simples" id="simples">Sabores Simples (Ñoquis/Tallarines)</label>
                     <select name="simples" id="simples-list">
                         <option value="default">Seleccione el Sabor</option>
                         <option value="papa">Papa</option>
                         <option value="remolacha">Remolacha</option>
                         <option value="espinaca">Espinaca</option>
                         <option value="calabaza">Calabaza</option>
+                    </select>
+                </div>
+                <div class="flex-row">
+                    <label for="salsas" id="salsas">Salsas:</label>
+                    <select name="salsas" id="salsas-list">
+                        <option value="default">Seleccione una Salsa</option>
+                        <option value="rosa">Rosa</option>
+                        <option value="tuco">Tuco</option>
+                        <option value="fileto">Fileto</option>
+                        <option value="blanca">Blanca</option>
+                        <option value="bolognesa">Bolognesa</option>
                     </select>
                 </div>
             </div>

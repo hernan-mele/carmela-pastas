@@ -1,10 +1,11 @@
 const pastasList = document.querySelector('#pasta-combo')
 const rellenosList = document.querySelector('#rellenas')
 const simplesList = document.querySelector('#simples-list')
+const salsasList = document.querySelector('#salsas-list')
 const whatsappLink = document.querySelector('#whatsapp')
 const integral = document.querySelector('#tipo')
 
-let pastasObject = {
+const pastasObject = {
     'ñoquis': 'ñoquis',
     'tallarines': 'tallarines',
     'raviolones': 'raviolones',
@@ -12,7 +13,7 @@ let pastasObject = {
     'cappellettis': 'cappellettis'
 }
 
-let saboresObject = {
+const saboresObject = {
     simple: {
         'papa': 'papa',
         'espinaca': 'espinaca',
@@ -31,19 +32,32 @@ let saboresObject = {
     }
 }
 
+const salsas = {
+    'rosa': 'rosa',
+    'tuco': 'tuco',
+    'fileto': 'fileto',
+    'blanca': 'blanca',
+    'bolognesa': 'bolognesa'
+}
+
 pastasList.addEventListener('change', () => {
-    whatsappLink.setAttribute('href', `https://wa.me/5491163680269?text=${whatsapp(pastasObject[pastasList.value], "")}`)
+
     simplesList.addEventListener('change', () => {
-        whatsappLink.setAttribute('href', `https://wa.me/5491163680269?text=${whatsapp(pastasObject[pastasList.value], saboresObject.simple[simplesList.value])}`)
+        salsasList.addEventListener('change', () => {
+            whatsappLink.setAttribute('href', `https://wa.me/5491163680269?text=${whatsapp(pastasObject[pastasList.value], saboresObject.simple[simplesList.value], salsas[salsasList.value])}`)
+        })
     })
+
     rellenosList.addEventListener('change', () => {
-        whatsappLink.setAttribute('href', `https://wa.me/5491163680269?text=${whatsapp(pastasObject[pastasList.value], saboresObject.rellenos[rellenosList.value])}`)
+        salsasList.addEventListener('change', () => {
+            whatsappLink.setAttribute('href', `https://wa.me/5491163680269?text=${whatsapp(pastasObject[pastasList.value], saboresObject.rellenos[rellenosList.value], salsas[salsasList.value])}`)
+        })
     })
 })
 
 
-const whatsapp = (pasta, sabor) => {
-    let url = `Buenos dias, queria hacer un pedido de ${pasta} de ${sabor}. Me dirias el precio por favor? Gracias`
+const whatsapp = (pasta, sabor, salsa) => {
+    let url = `Buenos dias, queria hacer un pedido de ${pasta} de ${sabor} y con salsa ${salsa}. Me dirias el precio por favor? Gracias`
     return url = encodeURIComponent(url)
 }
 
