@@ -384,7 +384,122 @@ body{
     color: #888;
     text-decoration: underline;
 }
-@media (max-width: 720px){
+
+@media (max-width: 375px){
+    .menu__button{
+        width: 40px;
+    }
+
+    .header__nav-list.show{
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(210, 200, 190, 0.9);
+        height: 100vh;
+        width: 100vw;
+        transition: margin-left 4s;
+        -webkit-transition: margin-left 4s;
+        -moz-transition: margin-left 4s;
+        -ms-transition: margin-left 4s;
+        -o-transition: margin-left 4s;
+        font-size: 1em;
+    }
+
+    .nuestras-pastas{
+        width: 100%;
+        height: 60vh;
+    }
+
+    .nuestras-pastas-1__title{
+        left: 0;
+        margin: auto;
+    }
+
+    .nuestras-pastas__2{
+        height: 100vh;
+    }
+
+    .nuestros-sabores{
+        width: 100%;
+    }
+
+    .nuestros-sabores__2{
+        width: 93vw;
+        height: 60vh;
+        background: url('./img/nuestros-sabores-bg.jpeg'), center / cover no-repeat;
+    }
+
+    .nuestros-sabores-2__title{
+        left: 0;
+        margin: auto;
+    }
+
+    .nuestros-sabores__1{
+        height: fit-content;
+        flex-direction: column;
+        justify-content: center;
+        padding: 25px;
+    }
+
+    .nuestros-sabores__1-list{
+        left: 0;
+        margin: 0;
+    }
+
+
+    .nuestras-salsas{
+        margin-top: 15px;
+    }
+
+    .nuestras-salsas-1__title{
+        left: 0;
+        margin: auto;
+    }
+
+    .nuestros-combos{
+        margin-top: -350px;
+    }
+
+    .nuestros-combos-2__title{
+        left: 0;
+        margin: auto;
+    }
+
+    .pedidos{
+        margin-top: -180px;
+    }
+
+    .pedidos-1__title{
+        left: 0;
+        margin: auto;
+    }
+
+    .pedidos__2{
+        height: 40vh;
+    }
+
+    .nuestras-formas-pagos{
+        margin-top: -250px;
+    }
+
+    .nuestras-formas-pagos__1-list{
+        top: 10%;
+        left: 0;
+        margin: auto;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px){
 
     .header__nav-list{
         display: none;
@@ -412,7 +527,7 @@ body{
         -moz-transition: margin-left 4s;
         -ms-transition: margin-left 4s;
         -o-transition: margin-left 4s;
-}
+    }
 
     .nav-list__li{
         padding: 20px;
@@ -426,7 +541,8 @@ body{
     .nuestras-pastas{
         margin-top: 200px;
         flex-direction: column;
-        height: 40vh;
+        height: 50vh;
+        margin-bottom: 30px;
     }
 
     .nuestras-pastas__1{
@@ -435,6 +551,7 @@ body{
 
     .nuestras-pastas__2{
         width: 100%;
+        height: 60vh;
     }
 
     .nuestras-pastas__2-list{
@@ -462,7 +579,7 @@ body{
     .nuestros-sabores__1{
         order: 2;
         width: 100%;
-        height: fit-content;
+        height: 40vh;
     }
 
     .nuestros-sabores__1-list{
@@ -472,7 +589,7 @@ body{
 
     .nuestras-salsas{
         flex-direction: column;
-        margin-top: -43vh;
+        margin-top: -28vh;
     }
 
     .nuestras-salsas__1{
@@ -493,7 +610,7 @@ body{
 
     .nuestros-combos{
         flex-direction: column;
-        margin-top: -55vh;
+        margin-top: -48vh;
     }
 
     .nuestros-combos__1{
@@ -510,7 +627,7 @@ body{
 
     .pedidos{
         flex-direction: column;
-        margin-top: -45vh;
+        margin-top: -33vh;
     }
 
     .pedidos__1{
@@ -525,7 +642,7 @@ body{
 
     .nuestras-formas-pagos{
         flex-direction: column;
-        margin-top: -59vh;
+        margin-top: -52vh;
     }
 
     .nuestras-formas-pagos__2{
@@ -543,5 +660,15 @@ body{
         width: 100%;
         height: 300px;
         order: 2;
+    }
+
+    .footer{
+        margin-top: -35vh;
+    }
+}
+
+@media (max-width: 1280px){
+    .header__nav-list{
+        margin-right: -200px;
     }
 }
