@@ -384,7 +384,7 @@ body{
     color: #888;
     text-decoration: underline;
 }
-@media (max-width: 768px){
+@media (max-width: 720px){
 
     .header__nav-list{
         display: none;
