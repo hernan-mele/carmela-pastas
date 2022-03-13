@@ -531,7 +531,7 @@ body{
 
     .nav-list__li{
         padding: 20px;
-        font-size: 2.5em;
+        font-size: 2em;
     }
 
     .nav-list__li:first-child{
@@ -566,7 +566,7 @@ body{
 
     .nuestros-sabores{
         flex-direction: column;
-        margin-top: 15px;
+        margin-top: 200px;
         margin-bottom: 0;
     }
 
@@ -589,7 +589,7 @@ body{
 
     .nuestras-salsas{
         flex-direction: column;
-        margin-top: -28vh;
+        margin-top: -5vh;
     }
 
     .nuestras-salsas__1{
@@ -610,7 +610,7 @@ body{
 
     .nuestros-combos{
         flex-direction: column;
-        margin-top: -48vh;
+        margin-top: -10vh;
     }
 
     .nuestros-combos__1{
@@ -627,7 +627,7 @@ body{
 
     .pedidos{
         flex-direction: column;
-        margin-top: -33vh;
+        margin-top: -5vh;
     }
 
     .pedidos__1{
@@ -642,7 +642,7 @@ body{
 
     .nuestras-formas-pagos{
         flex-direction: column;
-        margin-top: -52vh;
+        margin-top: -12vh;
     }
 
     .nuestras-formas-pagos__2{
@@ -663,7 +663,7 @@ body{
     }
 
     .footer{
-        margin-top: -35vh;
+        margin-top: -10vh;
     }
 }
 
