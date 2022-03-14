@@ -466,6 +466,7 @@ body{
 }
 
 @media screen and (max-width: 375px){
+
     .menu__button{
         width: 20px;
         height: 40px;
@@ -510,9 +511,9 @@ body{
     }
 
     .nuestras-pastas__2{
-        height: 100%;
+        height: fit-content;
         width: 100%;
-        margin-top: 45px;
+        padding: 25px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -520,9 +521,8 @@ body{
     }
 
     .nuestras-pastas__2-list{
-        position: relative;
-        top: 0;
-        left: 0;
+        font-size: 1em;
+        top: 25px;
     }
 
     .nuestros-sabores{
@@ -531,7 +531,7 @@ body{
 
     .nuestros-sabores__2{
         width: 93vw;
-        height: 60vh;
+        height: 90vh;
         background: url('./img/nuestros-sabores-bg.jpeg'), center / cover no-repeat;
     }
 
