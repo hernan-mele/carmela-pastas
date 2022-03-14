@@ -48,40 +48,80 @@ body{
 @keyframes vertical{
 	0%{
 		transform: translateY(0px);
-	}
+		-webkit-transform: translateY(0px);
+		-moz-transform: translateY(0px);
+		-ms-transform: translateY(0px);
+		-o-transform: translateY(0px);
+}
 	50%{
-		transform: transplateY(22px) rotate(0);
-	}
+		transform: translateY(22px) rotate(0);
+		-webkit-transform: translateY(22px) rotate(0);
+		-moz-transform: translateY(22px) rotate(0);
+		-ms-transform: translateY(22px) rotate(0);
+		-o-transform: translateY(22px) rotate(0);
+}
 	100%{
 		transform: translateY(22px) rotate(45deg);
-	}
+		-webkit-transform: translateY(22px) rotate(45deg);
+		-moz-transform: translateY(22px) rotate(45deg);
+		-ms-transform: translateY(22px) rotate(45deg);
+		-o-transform: translateY(22px) rotate(45deg);
+}
 }
 
 @keyframes dissapear{
 	0%{
 		transform: scale(100%);
-	}
+		-webkit-transform: scale(100%);
+		-moz-transform: scale(100%);
+		-ms-transform: scale(100%);
+		-o-transform: scale(100%);
+}
 	50%{
 		transform: scale(70%);
-	}
+		-webkit-transform: scale(70%);
+		-moz-transform: scale(70%);
+		-ms-transform: scale(70%);
+		-o-transform: scale(70%);
+}
 	51%{
 		transform: scale(0%);
-	}
+		-webkit-transform: scale(0%);
+		-moz-transform: scale(0%);
+		-ms-transform: scale(0%);
+		-o-transform: scale(0%);
+}
 	100%{
 		transform: scale(0%);
-	}
+		-webkit-transform: scale(0%);
+		-moz-transform: scale(0%);
+		-ms-transform: scale(0%);
+		-o-transform: scale(0%);
+}
 }
 
 @keyframes vertical2{
 	0%{
 		transform: translateY(0px);
-	}
+		-webkit-transform: translateY(0px);
+		-moz-transform: translateY(0px);
+		-ms-transform: translateY(0px);
+		-o-transform: translateY(0px);
+}
 	50%{
 		transform: translateY(-22px) rotate(0);
-	}
+		-webkit-transform: translateY(-22px) rotate(0);
+		-moz-transform: translateY(-22px) rotate(0);
+		-ms-transform: translateY(-22px) rotate(0);
+		-o-transform: translateY(-22px) rotate(0);
+}
 	100%{
 		transform: translateY(-22px) rotate(-45deg);
-	}
+		-webkit-transform: translateY(-22px) rotate(-45deg);
+		-moz-transform: translateY(-22px) rotate(-45deg);
+		-ms-transform: translateY(-22px) rotate(-45deg);
+		-o-transform: translateY(-22px) rotate(-45deg);
+}
 }
 
 .one{
@@ -98,40 +138,80 @@ body{
 @keyframes original{
 	0%{
 		transform: translateY(22px) rotate(45deg);
-	}
+		-webkit-transform: translateY(22px) rotate(45deg);
+		-moz-transform: translateY(22px) rotate(45deg);
+		-ms-transform: translateY(22px) rotate(45deg);
+		-o-transform: translateY(22px) rotate(45deg);
+}
 	50%{
 		transform: translateY(22px) rotate(0);
-	}
+		-webkit-transform: translateY(22px) rotate(0);
+		-moz-transform: translateY(22px) rotate(0);
+		-ms-transform: translateY(22px) rotate(0);
+		-o-transform: translateY(22px) rotate(0);
+}
 	100%{
 		transform: translateY(0px);
-	}
+		-webkit-transform: translateY(0px);
+		-moz-transform: translateY(0px);
+		-ms-transform: translateY(0px);
+		-o-transform: translateY(0px);
+}
 }
 
 @keyframes appear{
 	0%{
 		transform: scale(0%);
-	}
+		-webkit-transform: scale(0%);
+		-moz-transform: scale(0%);
+		-ms-transform: scale(0%);
+		-o-transform: scale(0%);
+}
 	49%{
 		transform: scale(0%);
-	}
+		-webkit-transform: scale(0%);
+		-moz-transform: scale(0%);
+		-ms-transform: scale(0%);
+		-o-transform: scale(0%);
+}
 	50%{
 		transform: scale(50%);
-	}
+		-webkit-transform: scale(50%);
+		-moz-transform: scale(50%);
+		-ms-transform: scale(50%);
+		-o-transform: scale(50%);
+}
 	100%{
 		transform: scale(100%);
-	}
+		-webkit-transform: scale(100%);
+		-moz-transform: scale(100%);
+		-ms-transform: scale(100%);
+		-o-transform: scale(100%);
+}
 }
 
 @keyframes original2{
 	0%{
 		transform: translateY(-22px) rotate(-45deg);
-	}
+		-webkit-transform: translateY(-22px) rotate(-45deg);
+		-moz-transform: translateY(-22px) rotate(-45deg);
+		-ms-transform: translateY(-22px) rotate(-45deg);
+		-o-transform: translateY(-22px) rotate(-45deg);
+}
 	50%{
 		transform: translateY(-22px) rotate(0);
-	}
+		-webkit-transform: translateY(-22px) rotate(0);
+		-moz-transform: translateY(-22px) rotate(0);
+		-ms-transform: translateY(-22px) rotate(0);
+		-o-transform: translateY(-22px) rotate(0);
+}
 	100%{
 		transform: translateY(0px);
-	}
+		-webkit-transform: translateY(0px);
+		-moz-transform: translateY(0px);
+		-ms-transform: translateY(0px);
+		-o-transform: translateY(0px);
+}
 }
 
 .show{
@@ -385,9 +465,19 @@ body{
     text-decoration: underline;
 }
 
-@media (max-width: 375px){
+@media screen and (max-width: 375px){
     .menu__button{
-        width: 40px;
+        width: 20px;
+        height: 40px;
+        margin-right: 70px;
+    }
+
+    .header__img{
+        height: 30px;
+    }
+
+    .header__title{
+        width: 50%;
     }
 
     .header__nav-list.show{
@@ -411,7 +501,7 @@ body{
 
     .nuestras-pastas{
         width: 100%;
-        height: 60vh;
+        height: fit-content;
     }
 
     .nuestras-pastas-1__title{
@@ -420,7 +510,19 @@ body{
     }
 
     .nuestras-pastas__2{
-        height: 100vh;
+        height: 100%;
+        width: 100%;
+        margin-top: 45px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nuestras-pastas__2-list{
+        position: relative;
+        top: 0;
+        left: 0;
     }
 
     .nuestros-sabores{
@@ -499,10 +601,10 @@ body{
     }
 }
 
-@media (max-width: 768px){
+@media screen and (max-width: 768px){
 
     .header__img{
-        width: 50%;
+        height: 50px;
     }
 
     .header__nav-list{
@@ -593,6 +695,7 @@ body{
 
     .nuestras-salsas{
         flex-direction: column;
+        margin-top: 15vh;
     }
 
     .nuestras-salsas__1{
