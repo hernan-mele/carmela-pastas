@@ -531,7 +531,7 @@ body{
 
     .nuestros-sabores__2{
         width: 93vw;
-        height: 60vh;
+        height: fit-content;
         background: url('./img/nuestros-sabores-bg.jpeg'), center / cover no-repeat;
     }
 
@@ -541,7 +541,6 @@ body{
     }
 
     .nuestros-sabores__1{
-        margin-top: 100px;
         height: fit-content;
         flex-direction: column;
         justify-content: center;
@@ -550,6 +549,7 @@ body{
 
     .nuestros-sabores__1-list{
         left: 0;
+        margin: 0;
     }
 
 
