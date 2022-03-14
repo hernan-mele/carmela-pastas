@@ -531,7 +531,7 @@ body{
 
     .nuestros-sabores__2{
         width: 93vw;
-        height: fit-content;
+        height: 25vh;
         background: url('./img/nuestros-sabores-bg.jpeg'), center / cover no-repeat;
     }
 
