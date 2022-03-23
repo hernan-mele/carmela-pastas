@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Pagina de pedidos de pastas de Carmela pastas caseras">
     <link rel="shortcut icon" href="./img/logo.jpeg" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./normalize.css">
     <title>Carmela Pastas</title>
 </head>
 <body>
@@ -16,13 +18,9 @@
                 <img src="./img/logo-preview.png" alt="Logo de Carmela Pastas" class="header__img">
                 <h1 class="header__title">Carmela Pastas</h1>
             </div>
-            <button class="menu__button" aria-label="Abre el menu móvil">
-                <svg class="menu__svg" width="50" height="50" viewBox="0 0 100 100">
-                    <rect class="menu__button-line1 one" width="20" height="5" y="10" x="25"></rect>
-                    <rect class="menu__button-line2 two" width="20" height="5" y="20" x="25"></rect>
-                    <rect class="menu__button-line3 three" width="20" height="5" y="30" x="25"></rect>
-                </svg>
-            </button>
+            <div class="menu-btn">
+                <div class="menu-btn__lines"></div>
+            </div>
             <nav class="header__nav">
                 <ul class="header__nav-list">
                     <li class="nav-list__li"><a href="#pastas" class="nav-list__li-a">Pastas</a></li>
@@ -34,11 +32,11 @@
                 </ul>
             </nav>
         </header>
-        <section class="nuestras-pastas" id="pastas">
-            <div class="nuestras-pastas__1">
-                <h2 class="nuestras-pastas-1__title glass">Nuestras Pastas</h2>
+        <section class="secciones" id="pastas">
+            <div class="nuestras-pastas__1 titulos__div">
+                <h2 class="titulos">Nuestras Pastas</h2>
             </div>
-            <div class="nuestras-pastas__2">
+            <div class="listas">
                 <ul class="nuestras-pastas__2-list">
                     <li>Ñoquis</li>
                     <li>Tallarines</li>
@@ -49,8 +47,8 @@
                 </ul>
             </div>
         </section>
-        <section class="nuestros-sabores" id="sabores">
-            <div class="nuestros-sabores__1">
+        <section class="secciones" id="sabores">
+            <div class="nuestros-sabores__1 listas">
                 <ul class="nuestros-sabores__1-list">
                     <li><b>Rellenas:</b></li>
                     <li>Capresse</li>
@@ -70,15 +68,15 @@
                     <li>Calabaza</li>
                 </ul>
             </div>
-            <div class="nuestros-sabores__2">
-                <h2 class="nuestros-sabores-2__title glass">Nuestros Sabores</h2>
+            <div class="nuestros-sabores__2 titulos__div">
+                <h2 class="titulos">Nuestros Sabores</h2>
             </div>
         </section>
-        <section class="nuestras-salsas" id="salsas">
-            <div class="nuestras-salsas__1">
-                <h2 class="nuestras-salsas-1__title glass">Nuestras Salsas</h2>
+        <section class="secciones" id="salsas">
+            <div class="nuestras-salsas__1 titulos__div">
+                <h2 class="titulos">Nuestras Salsas</h2>
             </div>
-            <div class="nuestras-salsas__2">
+            <div class="listas">
                 <ul class="nuestras-salsas__2-list">
                     <li>Rosa</li>
                     <li>Tuco</li>
@@ -88,8 +86,8 @@
                 </ul>
             </div>
         </section>
-        <section class="nuestros-combos" id="combos">
-            <div class="nuestros-combos__1">
+        <section class="secciones" id="combos">
+            <div class="nuestros-combos__1 listas">
                 <div class="flex-row">
                     <label for="pastas">Pastas:</label>
                     <select name="pastas" id="pasta-combo" class="combo">
@@ -137,20 +135,20 @@
                     </select>
                 </div>
             </div>
-            <div class="nuestros-combos__2">
-                <h2 class="nuestros-combos-2__title glass">Elegi tu Combo</h2>
+            <div class="nuestros-combos__2 titulos__div">
+                <h2 class="titulos">Elegi tu Combo</h2>
             </div>
         </section>
-        <section class="pedidos" id="pedidos">
-            <div class="pedidos__1">
-                <h2 class="pedidos-1__title glass">Hacenos tu Pedido</h2>
+        <section class="secciones" id="pedidos">
+            <div class="pedidos__1 titulos__div">
+                <h2 class="titulos">Hacenos tu Pedido</h2>
             </div>
-            <div class="pedidos__2">
+            <div class="listas">
                 <p class="pedidos-2__p">Podes hacernos tu pedido al <a id="whatsapp">11-6368-0269</a> los dias viernes y sabado y lo podes retirar el dia domingo</p>
             </div>
         </section>
-        <section class="nuestras-formas-pagos" id="forma-de-pago">
-            <div class="nuestras-formas-pagos__1">
+        <section class="secciones" id="forma-de-pago">
+            <div class="nuestras-formas-pagos__1 listas">
                 <ul class="nuestras-formas-pagos__1-list">
                     <li>Contamos con las siguientes formas de pago:</li>
                     <li>Efectivo</li>
@@ -159,26 +157,30 @@
                     <li>Envio de dinero Mercadopago</li>
                 </ul>
             </div>
-            <div class="nuestras-formas-pagos__2">
-                <h2 class="nuestras-formas-pagos-2__title glass">Nuestras formas de Pago</h2>
+            <div class="nuestras-formas-pagos__2 titulos__div">
+                <h2 class="titulos">Nuestras formas de Pago</h2>
             </div>
         </section>
         <footer class="footer">
-            <h2 class="footer__title">Nuestras Redes</h2>
-            <ul class="footer__list">
-                <li><a href="https://www.instagram.com/lamorenapastas/?hl=es-la">Instagram</a></li>
-                <li><a href="https://wa.me/5491163680296">Whatsapp</a></li>
-                <li><a href="#">Faceboook</a></li>
-            </ul>
-            <h2 class="footer__title-2">Mapa del Sitio</h2>
-            <ul class="footer__list-2">
-                <li class="footer-list__li"><a href="#pastas" class="footer-list__li-a">Pastas</a></li>
-                <li class="footer-list__li"><a href="#sabores" class="footer-list__li-a">Sabores</a></li>
-                <li class="footer-list__li"><a href="#salsas" class="footer-list__li-a">Salsas</a></li>
-                <li class="footer-list__li"><a href="#combos" class="footer-list__li-a">Combos</a></li>
-                <li class="footer-list__li"><a href="#pedidos" class="footer-list__li-a">Pedidos</a></li>
-                <li class="footer-list__li"><a href="#forma-de-pago" class="footer-list__li-a">Formas de Pago</a></li>
-            </ul>
+            <div>
+                <h2 class="footer__title">Nuestras Redes</h2>
+                <ul class="footer__list">
+                    <li><a href="https://www.instagram.com/lamorenapastas/?hl=es-la">Instagram</a></li>
+                    <li><a href="https://wa.me/5491163680296">Whatsapp</a></li>
+                    <li><a href="#">Faceboook</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="footer__title-2">Mapa del Sitio</h2>
+                <ul class="footer__list-2">
+                    <li class="footer-list__li"><a href="#pastas" class="footer-list__li-a">Pastas</a></li>
+                    <li class="footer-list__li"><a href="#sabores" class="footer-list__li-a">Sabores</a></li>
+                    <li class="footer-list__li"><a href="#salsas" class="footer-list__li-a">Salsas</a></li>
+                    <li class="footer-list__li"><a href="#combos" class="footer-list__li-a">Combos</a></li>
+                    <li class="footer-list__li"><a href="#pedidos" class="footer-list__li-a">Pedidos</a></li>
+                    <li class="footer-list__li"><a href="#forma-de-pago" class="footer-list__li-a">Formas de Pago</a></li>
+                </ul>
+            </div>
         </footer>
     </div>
     <script src="./main.js"></script>

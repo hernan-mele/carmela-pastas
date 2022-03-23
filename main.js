@@ -3,12 +3,9 @@ const rellenosList = document.querySelector('#rellenas')
 const simplesList = document.querySelector('#simples-list')
 const salsasList = document.querySelector('#salsas-list')
 const whatsappLink = document.querySelector('#whatsapp')
-const integral = document.querySelector('#tipo')
-const menuButton = document.querySelector('.menu__button')
-const line1 = document.querySelector('.one')
-const line2 = document.querySelector('.two')
-const line3 = document.querySelector('.three')
 const menu = document.querySelector('.header__nav-list')
+const menuBtn = document.querySelector('.menu-btn')
+let menuOpen = false
 
 const pastasObject = {
     'ñoquis': 'ñoquis',
@@ -66,9 +63,14 @@ const whatsapp = (pasta, sabor, salsa) => {
     return url = encodeURIComponent(url)
 }
 
-menuButton.addEventListener('click', () => {
-    line1.classList.toggle('active')
-    line2.classList.toggle('active')
-    line3.classList.toggle('active')
-    menu.classList.toggle('show')
+menuBtn.addEventListener('click', () => {
+    if(!menuOpen){
+        menuBtn.classList.add('open')
+        menu.classList.add('open')
+        menuOpen = true
+    }else{
+        menuBtn.classList.remove('open')
+        menu.classList.remove('open')
+        menuOpen = false
+    }
 })
