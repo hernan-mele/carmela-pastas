@@ -436,7 +436,8 @@ body{
 
     .nuestros-sabores__1{
         flex-direction: column;
-        height: 70vh;
+        height: 100vh;
+        margin-bottom: 100px;
     }
 
     .nuestros-sabores__1, .nuestros-combos__1, .nuestras-formas-pagos__1{
