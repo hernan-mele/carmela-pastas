@@ -302,9 +302,6 @@ body{
 
 @media (max-width: 768px){
 
-    body{
-        background-color: red;
-    }
     .header__div{
         margin-left: 50px;
     }
@@ -423,6 +420,10 @@ body{
 
     #pastas{
         margin-top: 100px;
+    }
+
+    .nuestros-sabores__1{
+        height: fit-content;
     }
 
     .secciones{
