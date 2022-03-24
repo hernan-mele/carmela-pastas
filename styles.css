@@ -424,6 +424,7 @@ body{
 
     .secciones{
         grid-template-columns: 1fr;
+        margin: 200px 0;
     }
 
     .titulos__div{
@@ -437,7 +438,6 @@ body{
     .nuestros-sabores__1{
         flex-direction: column;
         height: 100vh;
-        margin-bottom: 100px;
     }
 
     .nuestros-sabores__1, .nuestros-combos__1, .nuestras-formas-pagos__1{
