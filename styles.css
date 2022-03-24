@@ -161,6 +161,10 @@ body{
 
 @media (max-width: 640px){
 
+    .header__div{
+        margin-left: 50px;
+    }
+
     .menu-btn{
         position: absolute;
         top: 15px;
@@ -286,8 +290,8 @@ body{
     }
 
     .listas{
-        padding: 20px;
         height: 50vh;
+        flex-direction: column;
     }
 
     .nuestros-sabores__1, .nuestros-combos__1, .nuestras-formas-pagos__1{
@@ -297,6 +301,14 @@ body{
 }
 
 @media (max-width: 768px){
+
+    body{
+        background-color: red;
+    }
+    .header__div{
+        margin-left: 50px;
+    }
+
     .menu-btn{
         position: absolute;
         top: 15px;
@@ -407,6 +419,27 @@ body{
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
+    }
+
+    #pastas{
+        margin-top: 100px;
+    }
+
+    .secciones{
+        grid-template-columns: 1fr;
+    }
+
+    .titulos__div{
+        height: 35vh;
+    }
+
+    .listas{
+        height: 50vh;
+    }
+
+    .nuestros-sabores__1, .nuestros-combos__1, .nuestras-formas-pagos__1{
+        order: 2;
+        text-align: center;
     }
 
 }
